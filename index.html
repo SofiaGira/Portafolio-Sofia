@@ -258,11 +258,23 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="cta">
         <h2>Let’s work on something together</h2>
         <p>Have anything in mind?</p>
-        <a class="btn light" href="mailto:sofi.giraldo.a@gmail.com">Send me an email</a>
+        <form class="form" action="https://formspree.io/f/mvkaanwz" method="POST">
+  <input type="text" name="name" placeholder="Your name" aria-label="Your name" required>
+  <input type="email" name="email" placeholder="Your email" aria-label="Your email" required>
+  <textarea name="message" rows="4" placeholder="Your message" aria-label="Your message" required></textarea>
+  <button class="btn light" type="submit">Send message</button>
+</form>
       </div>
     </div>
   </section>
 </main>
+
+<style>
+  .form{max-width:460px;margin:0 auto;display:grid;gap:12px;text-align:left}
+.form input,.form textarea{font:inherit;width:100%;padding:14px 18px;border-radius:14px;border:1px solid #3a3a3a;background:#161616;color:#fff}
+.form input::placeholder,.form textarea::placeholder{color:#8a8a8a}
+.form button{justify-self:center}
+</style>
 
 <footer>
   <div class="wrap">
